@@ -149,7 +149,7 @@ def resolveCapturePath(logDir: str = "") -> str:
         printError(f"日志路径不是目录：{directory}")
         sys.exit(1)
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    return str(directory / f"serial-{timestamp}.log")
+    return str(directory / f"LOG-{timestamp}.log")
 
 
 def validateProfileName(name: str) -> str:
